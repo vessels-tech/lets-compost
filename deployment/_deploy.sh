@@ -11,17 +11,9 @@ if [ -z $SITE_ID ]; then
     exit 1
 fi
 
-
 #set up environment variables and replace global site stuff with gulp
-
-
 source "$DIR"/env_"$SITE_ID".sh
-npm run replace #this creates the /tmp/prebuild folder
-
-#build hugo to /tmp
-cd /tmp/prebuild
-hugo -d /tmp/$SITE_ID
-
+$DIR/_build.sh $SITE_ID
 
 #deploy cloudformation
 cd $DIR
@@ -42,5 +34,5 @@ aws s3 sync /tmp/$SITE_ID s3://$S3_BUCKET_NAME
 
 
 #cleanup
-rm -rf /tmp/prebuild
 rm -rf /tmp/$SITE_ID
+rm -rf $DIR/../site/config.yaml

@@ -1,0 +1,8 @@
+export GOOGLE_ANALYTICS_TRACKING=""
+export PROTOCOL="http"
+export BASE_URL="localhost:1313"
+export SITE_ID="compostable"
+export SITE_NAME="Compostable"
+export S3_BUCKET_NAME="compostable.site"
+export ACM_CERTIFICATE_ARN="???"
+export STACK_NAME="public-compostable"

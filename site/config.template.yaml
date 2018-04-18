@@ -35,6 +35,7 @@ params:
     #   - Dropdown item 2
     #   - Dropdown item 3
   features:
+    # TODO: AB test pricing
     id: pricing
     tagline: You know you should be composting.
     subTagline: Let us take care of it for you.
@@ -43,6 +44,7 @@ params:
       image: illustrations/dead_fish.png
       text: Go on. Sit back and watch the world burn.
       button:
+        id: dummyButton
         text: $0
         url: https://lewisdaly.typeform.com/to/MwBWCr
       delay: 1
@@ -50,15 +52,18 @@ params:
       image: illustrations/pot_plant.png
       text: Not too much to compost, but it's still important.
       button:
-        text: __pricea__/Month
+        id: opt1Button
+        text: $10 Monthly
         url: https://lewisdaly.typeform.com/to/MwBWCr
       delay: 2
     - title: Weekly
       image: illustrations/trees.png
       text: We pick up your compost once a week. Great for families.
       button:
-        text: __priceb__/Month
-        url: https://lewisdaly.typeform.com/to/MwBWCr
+        id: opt2Button
+        text: $18 Monthly
+        url: /
+        # url: https://lewisdaly.typeform.com/to/MwBWCr
       delay: 3
   sellingPoints:
     tagline: Here's how it works

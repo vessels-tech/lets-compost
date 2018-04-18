@@ -21,6 +21,26 @@
     />
 </noscript>
 <!-- End Facebook Pixel Code -->
+
+<!-- Facebook Converstion Tracking -->
+<script type="text/javascript">
+    $('#dummyButton').click(function () {
+        // insert_event_code_here;
+        fbq('track', 'Purchase', { value: '00.00', currency: 'AUD' });
+    });
+
+    $('#opt1Button').click(function () {
+        // insert_event_code_here;
+        fbq('track', 'Purchase', { value: '10.00', currency: 'AUD' });
+    });
+
+    $('#opt2Button').click(function () {
+        // insert_event_code_here;
+        console.log("hello");
+        fbq('track', 'Purchase', { value: '18.00', currency: 'AUD' });
+    });
+</script>
+
 <script src="{{ "js/jquery-panelslider/jquery.panelslider.min.js" | absURL }}"></script>
 {{- if .Site.IsServer -}}
 {{- $jsUrl := printf "js/%s" (index .Site.Data.assetHashes "fresh.js") | absURL }}
