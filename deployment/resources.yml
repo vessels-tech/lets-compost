@@ -7,10 +7,12 @@ Parameters:
   RootDomainName:
     Description: The domain name of the public site
     Type: String
-  # AcmCertificateArn:
-  #   Type: String
-  #   Description: the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate.
-  #   AllowedPattern: "arn:aws:acm:.*"
+  AcmCertificateArn:
+    Type: String
+    Description: the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate.
+    # Note: you need to set this up manually, in us-east-1
+    # Follow this guide: https://deliciousbrains.com/wp-offload-s3/doc/custom-domain-https-cloudfront/
+    AllowedPattern: "arn:aws:acm:.*"
 Mappings:
   RegionMap:
     us-east-1:
@@ -120,8 +122,10 @@ Resources:
           ViewerProtocolPolicy: redirect-to-https
         PriceClass: PriceClass_All
         ViewerCertificate:
-          # AcmCertificateArn: !Ref AcmCertificateArn
-          CloudFrontDefaultCertificate: True
+          AcmCertificateArn: !Ref AcmCertificateArn
+          # CloudFrontDefaultCertificate: True
+          SslSupportMethod: sni-only
+
 
 Outputs:
   WebsiteURL:

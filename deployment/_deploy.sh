@@ -11,6 +11,7 @@ if [ -z $SITE_ID ]; then
     exit 1
 fi
 
+
 #set up environment variables and replace global site stuff with gulp
 source "$DIR"/env_"$SITE_ID".sh
 $DIR/_build.sh $SITE_ID
@@ -24,7 +25,7 @@ aws cloudformation deploy \
   --parameter-overrides \
     HostedZoneName=$BASE_URL. \
     RootDomainName=$BASE_URL \
-    # AcmCertificateArn=$ACM_CERTIFICATE_ARN
+    AcmCertificateArn=$ACM_CERTIFICATE_ARN
 
 
 #upload to s3

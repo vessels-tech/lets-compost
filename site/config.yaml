@@ -1,12 +1,12 @@
 # baseURL: https://letscompost.com
-baseURL: "https://compostable.site"
+baseURL: "https://compostclub.site"
 languageCode: en-us
-title: Compostable
+title: Compost Club
 theme: "fresh"
 
 params:
   hero:
-    tagline: Compostable
+    tagline: Compost Club
     subTagline: On demand composting. Coming soon to Adelaide.
     buttonText: See Pricing
     buttonUrl: /#pricing
@@ -21,7 +21,7 @@ params:
     buttonText: Join the list!
     buttonUrl: /#pricing
     logo:
-      src: logos/logo_compostable.png
+      src: logos/logo_compostclub.png
       alt: Main navbar logo
     links:
     - text: Features
@@ -69,7 +69,7 @@ params:
     tagline: Here's how it works
     points:
     - title: Step 1
-      description: You sign up for Compostable, we give you a bucket to use for your compost.
+      description: You sign up for Compost Club, we give you a bucket to use for your compost.
       icon: sheep
     - title: Step 2
       description: On your designated pick up day, leave it out on the curb from 6:30am.
@@ -102,7 +102,7 @@ params:
   # contact:
   #   tagline: Want to learn more? Drop us a line or two!
   footer:
-    image: /logo_compostable_light.png
+    image: /logo_compostclub_light.png
     columns:
     - title: About Us
       links:
