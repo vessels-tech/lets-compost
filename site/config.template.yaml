@@ -1,5 +1,5 @@
 # baseURL: https://letscompost.com
-baseURL: __PROTOCOL__://__BASE_URL__
+baseURL: "__PROTOCOL__://__BASE_URL__"
 languageCode: en-us
 title: __SITE_NAME__
 theme: "fresh"
@@ -21,7 +21,7 @@ params:
     buttonText: Join the list!
     buttonUrl: /#pricing
     logo:
-      src: logos/logo_lets_compost.png
+      src: logos/logo___SITE_ID__.png
       alt: Main navbar logo
     links:
     - text: Features
@@ -97,7 +97,7 @@ params:
   # contact:
   #   tagline: Want to learn more? Drop us a line or two!
   footer:
-    image: logo_lets_compost_light.png
+    image: /logo___SITE_ID___light.png
     columns:
     - title: About Us
       links:
