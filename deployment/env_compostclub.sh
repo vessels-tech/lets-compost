@@ -1,0 +1,5 @@
+export GOOGLE_ANALYTICS_TRACKING=""
+export PROTOCOL="https"
+export BASE_URL="compostclub.site"
+export SITE_ID="compostclub"
+export SITE_NAME="Compost Club"

@@ -1,0 +1,7 @@
+export GOOGLE_ANALYTICS_TRACKING=""
+# export PROTOCOL="https"
+export PROTOCOL="http"
+# export BASE_URL="compostable.site"
+export BASE_URL="localhost:8000"
+export SITE_ID="compostable"
+export SITE_NAME="Compostable"

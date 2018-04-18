@@ -1,11 +1,12 @@
-baseURL: https://letscompost.com
+# baseURL: https://letscompost.com
+baseURL: __PROTOCOL__://__BASE_URL__
 languageCode: en-us
-title: Compostable
+title: __SITE_NAME__
 theme: "fresh"
 
 params:
   hero:
-    tagline: Let's Compost
+    tagline: __SITE_NAME__
     subTagline: On demand composting. Coming soon to Adelaide.
     buttonText: See Pricing
     buttonUrl: /#pricing
@@ -63,7 +64,7 @@ params:
     tagline: Here's how it works
     points:
     - title: Step 1
-      description: You sign up for __product_name__, we give you a bucket to use for your compost.
+      description: You sign up for __SITE_NAME__, we give you a bucket to use for your compost.
       icon: sheep
     - title: Step 2
       description: On your designated pick up day, leave it out on the curb from 6:30am.
