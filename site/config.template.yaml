@@ -1,4 +1,3 @@
-# baseURL: https://letscompost.com
 baseURL: "__PROTOCOL__://__BASE_URL__"
 languageCode: en-us
 title: __SITE_NAME__

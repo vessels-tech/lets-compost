@@ -1,7 +1,7 @@
 export GOOGLE_ANALYTICS_TRACKING=""
 export PROTOCOL="https"
 export BASE_URL="compostclub.site"
-export SITE_ID="compostclub"
+export SITE_ID="compost_club"
 export SITE_NAME="Compost Club"
 export S3_BUCKET_NAME="compostclub.site"
 export STACK_NAME="public-compostclub"

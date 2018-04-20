@@ -21,3 +21,5 @@ mv /tmp/gulp/config.template.yaml ../site/config.yaml
 #build hugo to /tmp
 cd "$DIR"/../site
 hugo -d /tmp/$SITE_ID
+
+echo "build hugo to /tmp/$SITE_ID"
