@@ -18,6 +18,9 @@ source "$DIR"/env_"$SITE_ID".sh
 npm run replace #this creates the config.yaml file
 mv /tmp/gulp/config.template.yaml ../site/config.yaml
 
+#compile the template
+cd "$DIR"/../site/themes/fresh && npm run build
+
 #build hugo to /tmp
 cd "$DIR"/../site
 hugo -d /tmp/$SITE_ID
